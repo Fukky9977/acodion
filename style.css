@@ -1,0 +1,17 @@
+.box {
+    display: block;
+    cursor: pointer;
+}
+
+.box-1 {
+    margin-bottom: 10px;
+}
+
+.box-acodion {
+    display: none;
+    background-color: #DFCAB6;
+}
+
+h2, p{
+    margin: 0;
+}
