@@ -1,3 +1,12 @@
+.box-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-item {
+    list-style: none;
+}
+
 .box {
     display: block;
     cursor: pointer;
@@ -7,7 +16,7 @@
     margin-bottom: 10px;
 }
 
-.box-acodion {
+.box-acodion-1, .box-acodion-2, .box-acodion-3 {
     display: none;
     background-color: #DFCAB6;
 }
