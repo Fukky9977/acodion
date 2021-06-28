@@ -8,18 +8,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <div class="box-1">
-            <h1>これはボタンサンプルです</h1>
-            <button>
-                詳細
-            </button>
-        </div>
-        <div class="box-acodion">
-            <h2>これはアコーディオンのサンプルです</h2>
-            <p>サンプル</p>
-        </div>
+    <ul class="box-list">
+        <li class="box-item">
+            <div class="box">
+                <div class="box-1">
+                    <h1>これはボタンサンプルです</h1>
+                    <button class="button-1">
+                        詳細
+                    </button>
+                </div>
+                
+            </div>
+        </li>
+        <li class="box-item">
+            <div class="box">
+                <div class="box-1">
+                    <h1>これはボタンサンプルです</h1>
+                    <button class="button-2">
+                        詳細
+                    </button>
+                </div>
+                
+            </div>
+        </li>
+        <li class="box-item">
+            <div class="box">
+                <div class="box-1">
+                    <h1>これはボタンサンプルです</h1>
+                    <button class="button-3">
+                        詳細
+                    </button>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <div class="box-acodion-1">
+        <h2>これはアコーディオンのサンプルですよ</h2>
+        <p>サンプル</p>
     </div>
+    <div class="box-acodion-2">
+        <h2>これはアコーディオンのサンプルですね</h2>
+        <p>サンプル</p>
+    </div>
+    <div class="box-acodion-3">
+        <h2>これはアコーディオンのサンプルですわよ</h2>
+        <p>サンプル</p>
+    </div>
+    
         <div class="box-text">
             <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
@@ -30,8 +66,16 @@
         crossorigin="anonymous"></script>
     <script>
         $(function() {
-            $('button').click(function(){
-                $('.box-acodion').slideToggle();
+            $('.button-1').click(function(){
+                $('.box-acodion-1').slideToggle();
+            });
+
+            $('.button-2').click(function(){
+                $('.box-acodion-2').fadeToggle();
+            });
+
+            $('.button-3').click(function(){
+                $('.box-acodion-3').toggle('200');
             });
         });
     </script>
